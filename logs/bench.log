@@ -1,0 +1,60 @@
+2023-05-09 23:48:16,017 DEBUG cd /home/naslu/frappe-bench && /usr/bin/virtualenv --quiet env -p python3
+2023-05-09 23:48:17,313 DEBUG cd /home/naslu/frappe-bench && /home/naslu/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-05-09 23:48:20,708 LOG Getting frappe
+2023-05-09 23:48:20,709 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2023-05-09 23:48:35,052 LOG Installing frappe
+2023-05-09 23:48:35,053 DEBUG cd /home/naslu/frappe-bench && /home/naslu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/naslu/frappe-bench/apps/frappe 
+2023-05-09 23:50:27,208 DEBUG cd /home/naslu/frappe-bench/apps/frappe && yarn install
+2023-05-09 23:50:41,594 DEBUG cd frappe-bench && bench build
+2023-05-09 23:50:41,871 INFO /usr/local/bin/bench build
+2023-05-09 23:51:08,381 LOG setting up backups
+2023-05-09 23:51:08,528 LOG backups were set up
+2023-05-09 23:51:08,531 INFO Bench frappe-bench initialized
+2023-05-09 23:52:08,552 INFO /usr/local/bin/bench start
+2023-05-09 23:52:10,902 INFO /usr/local/bin/bench worker --queue short
+2023-05-09 23:52:10,958 INFO /usr/local/bin/bench schedule
+2023-05-09 23:52:10,958 INFO /usr/local/bin/bench worker --queue default
+2023-05-09 23:52:10,963 INFO /usr/local/bin/bench worker --queue long
+2023-05-09 23:52:10,971 INFO /usr/local/bin/bench watch
+2023-05-09 23:52:10,983 INFO /usr/local/bin/bench serve --port 8000
+2023-05-09 23:53:01,351 INFO /usr/local/bin/bench find .
+2023-05-09 23:53:19,577 INFO /usr/local/bin/bench new-app library_management
+2023-05-09 23:53:20,469 LOG creating new app library_management
+2023-05-09 23:53:49,627 LOG Installing library_management
+2023-05-09 23:53:49,628 DEBUG cd /home/naslu/frappe-bench && /home/naslu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/naslu/frappe-bench/apps/library_management 
+2023-05-09 23:53:52,106 DEBUG bench build --app library_management
+2023-05-09 23:53:52,397 INFO /usr/local/bin/bench build --app library_management
+2023-05-09 23:54:23,042 INFO /usr/local/bin/bench new-site library.test
+2023-05-09 23:55:27,903 INFO /usr/local/bin/bench --site library.test add-to-hosts
+2023-05-09 23:55:52,704 INFO /usr/local/bin/bench --site library.test install-app library_management
+2023-05-09 23:56:12,412 INFO /usr/local/bin/bench --site library.test list-apps
+2023-05-09 23:57:36,429 INFO /usr/local/bin/bench start
+2023-05-09 23:57:38,377 INFO /usr/local/bin/bench serve --port 8000
+2023-05-09 23:57:38,428 INFO /usr/local/bin/bench watch
+2023-05-09 23:57:38,437 INFO /usr/local/bin/bench worker --queue short
+2023-05-09 23:57:38,451 INFO /usr/local/bin/bench worker --queue default
+2023-05-09 23:57:38,508 INFO /usr/local/bin/bench worker --queue long
+2023-05-09 23:57:38,527 INFO /usr/local/bin/bench schedule
+2023-05-10 00:00:01,919 INFO /usr/local/bin/bench --verbose --site all backup
+2023-05-10 09:09:39,761 INFO /usr/local/bin/bench start
+2023-05-10 09:09:51,597 INFO /usr/local/bin/bench watch
+2023-05-10 09:09:51,711 INFO /usr/local/bin/bench worker --queue long
+2023-05-10 09:09:51,738 INFO /usr/local/bin/bench worker --queue default
+2023-05-10 09:09:51,808 INFO /usr/local/bin/bench worker --queue short
+2023-05-10 09:09:51,930 INFO /usr/local/bin/bench schedule
+2023-05-10 09:09:51,972 INFO /usr/local/bin/bench serve --port 8000
+2023-05-10 09:17:42,841 INFO /usr/local/bin/bench --site library.test console
+2023-05-10 09:19:18,630 INFO /usr/local/bin/bench --site library.test mariadb
+2023-05-10 09:20:20,647 INFO /usr/local/bin/bench --help
+2023-05-10 09:21:09,814 INFO /usr/local/bin/bench set-config -g developer_mode true
+2023-05-10 09:21:36,721 INFO /usr/local/bin/bench start
+2023-05-10 09:21:44,399 INFO /usr/local/bin/bench watch
+2023-05-10 09:21:44,468 INFO /usr/local/bin/bench serve --port 8000
+2023-05-10 09:21:44,757 INFO /usr/local/bin/bench worker --queue long
+2023-05-10 09:21:44,770 INFO /usr/local/bin/bench worker --queue short
+2023-05-10 09:21:44,785 INFO /usr/local/bin/bench schedule
+2023-05-10 09:21:45,062 INFO /usr/local/bin/bench worker --queue default
+2023-05-12 14:48:40,972 INFO /usr/local/bin/bench --site library.test mariadb
+2023-05-12 15:00:46,660 INFO /usr/local/bin/bench --site library.test mariadb
+2023-05-12 15:46:11,241 INFO /usr/local/bin/bench --site library.test set-config server_script_enabled true
+2023-05-16 06:00:07,179 INFO /usr/local/bin/bench --verbose --site all backup

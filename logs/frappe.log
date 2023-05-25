@@ -1,0 +1,6 @@
+2023-05-12 14:13:38,475 ERROR frappe New Exception collected with id: 2023-05-12 14:13:36.307905-127.0.0.1-ef2
+Site: library.test
+Form Dict: {'sid': '93a24175ff5f096eaa4fe9c2f5b1e2930ca33c119d50ceffee54d486'}
+2023-05-14 02:47:22,220 ERROR frappe New Exception collected with id: 2023-05-14 02:47:21.587193-127.0.0.1-ba2
+Site: library.test
+Form Dict: {'sid': '7493f4bdcf7873bcb08a098965766045f2e7c80c98600a5bde15132b'}
